@@ -1,3 +1,5 @@
+##!!Teachers Feedback and Grade - 87.5% - Question 5 should print out a table. Question 7 keeps ask for the principal after every iteration of the for-loop. Question 8 doesn't take into account that the compound happens every so many months. 
+
 #convert.py
 # a program to convirt celcius to ferinhight
 def main1through2():
