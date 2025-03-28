@@ -1,1 +1,77 @@
+1) Modify the statistics program from this chapter so that client programs have more flexibility in computing the mean and/or standard deviation. specifically, redesign the library to have the following functions: mean (nums) Returns the mean of numbers in nums. stdDev (nums) Returns the standard deviation of nums.
+meanStdDev (nums) Returns both the mean and standard deviation of nums.
 
+2) Some languages do not have the flexible built-in list (array) operations that Python has. Write an algorithm for each of the following Python operations and test your algorithm by coding it up in a suitable func-tion. For example, as a function, reverse (myList) should do the same as myList reverse. Obviously, you are not allowed to use the corresponding Python method to implement your function.
+a)
+count (myList, x) (like myList. count (x))
+b)
+isin(myList, x) (like x in myList))
+c)
+index(myList, x) (like myList. index (x))
+d)
+reverse (myList) (like myList. reverse ())
+e)
+sort (myList) (like myList. sort ())
+
+3) The inner product of two vectors (sequences of numbers) is an important measure of similarity and is an essential core operation in modern Al systems based on artificial neural networks. Write and test a function
+innerProd(x, y) that computes the inner product of two (same length)
+lists. The inner product of x and y is computed as:
+nー1
+i=0
+For example, innerProd ( [1, 2, 3], [4, 5, 6]) produces 32 since 1(4)+
+2(5) + 3(6) = 32
+
+4) Write and test a function removeDuplicates (somelist) that removes du.
+plicate values from a list.
+
+5) Write and test a function to meet this specification:
+squareEach (nums) nums is a list of numbers. Modifies the list by squaring
+each entry.
+
+6) Write and test a function to meet this specification:
+toNumbers (strList) strList is a list of strings, each of which represents a number. Modifies each entry in the list by converting it to a number.
+
+7) Use the functions from the previous two exercises to write a program that computes the sum of the squares of numbers that the user enters on a single line of input.
+
+8) The Sieve of Eratosthenes is an elegant algorithm for finding all of the prime numbers up to some limit n. The basic idea is to first create a list of numbers from 2 to n. The first number is removed from the list and announced as a prime number, and all multiples of this number up to n are removed from the list. This process continues until the list is empty.
+For example, if we wished to find all the primes up to 10, the list would originally contain 2, 3, 4, 5, 6, 7, 8, 9, 10. The 2 is removed and announced to be prime. Then 4, 6, 8, and 10 are removed, since they are multiples of 2. That leaves 3, 5, 7, 9. Repeating the process, 3 is announced as prime and removed, and 9 is removed because it is a multiple of 3. That leaves 5 and 7. The algorithm continues by announcing that 5 is prime and removing it from the list. Finally, 7 is announced and removed, and we're done.
+Write a program that prompts a user for n and then uses the sieve
+algorithm to find all the primes less than or equal to n.
+
+9) Write a suite of functions to implement mathematical set operations. makeSet (elements) Returns a list containing all of the items in elements,
+but without any duplicates.
+addElement (s, x) Adds x to s if it is not already in s; otherwise, s is left
+unchanged.
+deleteElement (s, x) Removes x from s, if present; otherwise, s is left
+unchanged.member (s, x) Returns True if x is in s, and False otherwise.
+295
+intersection (s1, s2) Returns a new list containing just those elements
+that are common to s1 and s2.
+union(st, s2) Returns a new liSt containing all of the elements that are in s1, 52, Or both (without any duplicates).
+subtract (s1, s2) Returns a new list containing all the elements in s1
+that are not in s2.
+By the way, sets are so useful that Python actually has a built-in set datatype. While you may want to investigate Python's set, you should not development using lists.
+use it here. The point of this
+
+10) Write a program to animate a face bouncing around in a window (see Programming Exercises 17 from Chapter 6 and Exercise 13 from Chapter 7).
+Use a list of graphics objects to represent the face.
+
+11) A playing card consists of a rank and a suit. It can be represented as a tuple of (rank, suit) where rank is an int and suit is a single-character string. If aces are considered the highest card, it's convenient to use 2-14 to represent the ranks 2-10, jack, queen, king, ace. So (2, "c") is the two of clubs, and (14, "s") is the ace of spades. Write a function, makeDeck() that produces a list of 52 tuples representing a deck of cards.
+
+12) Using the card representation proposed in the previous problem, write a set of functions that can be used to categorize five-card poker hands.
+Straight flush Five ranks in a row, all of the same suit.
+Four of a kind Four of the same rank.
+Full house Three of one rank and two of another.
+Flush Five cards of the same suit.
+Straight Five ranks in a row.
+Three of a kind Three of one rank (but not a full house or four of a kind).
+Two pair Two each of two different ranks.
+Pair Two of the same rank (but not two pair, three or four of a kind).
+For example, straightflush(cards) should return True if the list of cards is a straight flush. Note, due to the way Python orders tuples, if you sort the list, the card tuples will be arranged by rank from lowest to
+
+13) less than 120 and the diastolic pressure is less than 80. Write a function that takes a set of blood pressure readings represented as a list of (systolic,
+and the other containing the elevated readings.
+diastolic) tuples and returns two lists, one containing the normal readings
+
+14) Write a program to draw a quiz score histogram. Your program should get the numbers from the user on a single line of input. Each number is a score in the range 0-10. Your program must count the number of occurrences of each score and then draw a vertical bar chart with a bar for each possible score (0-10), with a height corresponding to the count of that score. For example, if 15 students got an 8, then the height of the bar for 8 should be 15. Hint: Use a list that stores the count for each possible score. An example histogram is shown below:
+Bpp, 9pDlppg
