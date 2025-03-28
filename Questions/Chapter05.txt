@@ -1,1 +1,56 @@
+1) Write a program to print the lyrics of the song old MacDonald to your program should print the lyrics for five different animals similar to the example verse below.
+Old MacDonald had a farm, Ee-igh, Ee-igh, Oh!
+And on that farm he had a cow, Ee-igh, Ee-igh, Oh!
+With a moo, moo here and a moo, moo there.
+Here a moo, there a moo, everywhere a moo, moo.
+Old MacDonald had a farm, Ee-igh, Ee-igh, Oh!
 
+2) Write a program to print the lyrics for ten verses of "The Ants Go March-ing." A couple of sample verses are given below. You may choose your own activity for the "little one" in each verse, but be sure to choose something that makes the rhyme work (or almost work).
+The ants go marching one by one, hurrah! hurrah!
+The ants go marching one by one, hurrah! hurrah!
+The ants go marching one by one, The little one stops to suck his thumb, And they all go marching down...
+In the ground...
+To get out....
+Of the rain.
+Boom! Boom! Boom!
+The ants go marching two by two, hurrah! hurrah!
+The ants go marching two by two, hurrah! hurrah!
+The ants go marching two by two, The little one stops to tie his shoe, And they all go marching down...
+In the ground...
+To get out...
+Of the rain.
+Boom! Boom! Boom!
+
+3) Write definitions for these functions:
+sphereArea (radius) Returns the surface area of a sphere having the
+given radius.
+sphereVolume (radius) Returns the volume of a sphere having the given
+163
+Tise your functions to solve Programming Exercise 1 from Chapter 3.
+
+4) Write definitions for the following two functions: sumN (n) returns the sum of the first n natural numbers. sumNCubes (n) returns the sum of the cubes of the first n natural numbers.
+of the first n natural numbers.
+Then ut the motine in roguan that prosand a sen or a and
+
+5) Redo Programming Exercise 2 from Chapter 3. Use two functions- one to compute the area of a pizza, and one to compute cost per square inch.
+
+6) Write a function that computes the area of a triangle given the length of its three sides as parameters (see Programming Exercise 9 from Chapter 3).
+Use your function to augment triangle2. py from this chapter so that it also displays the area of the triangle.
+
+7) Write a function to compute the nth Fibonacci number. Use your function to solve Programming Exercise 16 from Chapter 3.
+
+8) Solve Programming Exercise 17 from Chapter 3 using a function nextGuess (guess, x) that returns the next guess.
+
+9) Write and test a function to meet this specification.
+drawFace (center, size, win) center is a Point, size is an int, and win is a GraphWin. Draws a simple face of the given size in win.
+Your function can draw a simple smiley (or grim) face. Demonstrate the function by writing a program that draws several faces of varying size in a single window.
+
+10) Use your drawFace function from the previous exercise to write a photo anonymizer. This program allows a user to load an image file (such as a PPM or GIF) and to draw cartoon faces over the top of existing faces in the photo. The user first inputs the name of the file containing the image. The image is displayed and the user is asked how many faces are to be blocked.
+face: the center and somewhere on the edge of the face (to determine the The program then enters a loop for the user to click on two points for each size of the face). The program should then draw a face in that location
+using the drawFace function.
+Hints: Section 4.7.4 describes the image-manipulation methods in the graphics library. Display the image centered in a GraphWin that is the same width and height as the image, and draw the graphics into this window.
+You can use a screen capture utility to save the resulting images.
+
+11) Write a function to meet this specification.
+moveTo (shape, newCenter) shape is a graphics object that supports the getCenter method and newCenter is a Point. Moves shape so that newCenter is its center.
+Use your function to write a program that draws a circle and then allows the user to click the window 10 times. Each time the user clicks, the circle is moved where the user clicked.
