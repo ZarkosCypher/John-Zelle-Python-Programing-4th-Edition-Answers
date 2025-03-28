@@ -1,1 +1,79 @@
+1) A certain Gs protessor gives 5-point quizzes that are graded on the scale
+5-A, 4-B, 3-C, 2-D, 1-F, O-F. Write a program that accepts a quiz score as an input and prints out the
 
+2) certain CS professor gives 100-point exams that are graded on the scale
+90-100:A, 80-89:B, 70-79:C, 60-69:D, <60:F. Write a program that accepts an exam score as input and prints out the corresponding grade. Use a string lookup table instead of a decision.
+
+3) An acronym is a word formed by taking the first letters of the words in a phrase and making a word from them. For example, RAM is an acronym for "random access memory." Write a program that allows the user to type in a phrase and then outputs the acronym for that phrase. Note: The acronym should be all uppercase, even if the words in the phrase are not capitalized.
+
+4) Numerologists claim to be able to determine a person's character traits based on the "numeric value" of a name. The value of a name is determined by summing up the values of the letters of the name where "a" is 1, "b" is 2, "c" is 3, up to "z" being 26. For example, the name "Zelle"
+would have the value 26 + 5 + 12 + 12 + 5 = 60 (which happens to be a
+very auspicious number, by the way). Write a program that calculates the numeric value of a single name provided as input.
+
+5) Expand your solution to the previous problem to allow the calculation of a complete name such as 'John Marvin Zelle" or "John Jacob Jingleheimer Smith." The total value is just the sum of the numeric values of all the names.
+﻿﻿﻿A Caesar cipher
+
+6) A Caesar cipher is a simple substitution cipher based on the idea of shifting each letter of the plaintext message a fixed number (called the key) of positions in the alphabet. For example, if the key value is 2, the word
+"Sourpuss" would be encoded as "Uqwtrwuu." The original message can be recovered by "reencoding" it using the negative of the key.
+Write a program that can encode and decode Caesar ciphers. The input to the program will be a string of plaintext and the value of the key.
+266
+The output will be an encoded message where each character in the orig. inal message is replaced by shifting it key characters in the Unicode char. acter set. For example, if ch is a character in the string and key is the amount to shift, then the character that replaces ch can be calculated as:
+chr (ord (ch) + key).
+
+7) One problem with the previous exercise is that it does not deal with the case when we "drop off the end" of the alphabet. A true Caesar cipher does the shifting in a circular fashion where the next character after "z" is
+"a." Modify your solution to the previous problem to make it circular. You may assume that the input consists of only letters and spaces.
+Hint: Make a string containing all the characters of your alphabet (up-percase letters, lowercase letters, and space) and use positions in your alphabet as the numbers for your code. You do not have to shift "z" into "a"; just make sure to use a circular shift over the entire sequence of characters in your alphabet string. You can use the remainder operator to achieve the necessary wraparound ((oldpos + key) % len (alphabet)).
+
+8) A Caesar cipher (see previous exercise) is easy to break because it shifts each letter by the same amount. A Vingenère cipher' is more secure, as it shifts different letters by differing amounts.
+The idea is to use a secret passphrase where the letters in the passphrase provide the shift amount for successive letters of the message. For exam-ple, if the passphrase is "cat" and the message is "Feed me," The "F will be shifted three letters because "c" is the third letter of the alphabet, the first
+"e" will be shifted one letter because "a" is the first letter of the alphabet, and the second "e" will be shifted 20 letters because "t" is the 20th letter of the alphabet. The passphrase is repeated as many times as necessary to cover the entire message, thus the "d" will be shifted three letters, the space one letter, the "m" 20 letters, etc. genère cipher.
+Write a program that implements encoding and decoding using a Vin-
+
+9) Write a program that counts the number of words in a sentence entered by the user.
+
+10) Write a program that calculates the average word length in a sentence entered by the user.
+
+11) Write an improved version of the futval. py program from Chapter 2.
+Your program will prompt the user for the amount of the investment, the annualized interest rate, and the number of years of the investment. The program will then output a nicely formatted table that tracks the value of the investment year by year. Your output might look something like this:
+year
+Value
+$2000.00
+0
+1
+2
+3
+4
+$2200.00
+$2420.00
+$2662.00
+$2928.20
+$3221.02
+6
+$3542.12
+7
+$3897.43
+
+12) The National Weather Service computes the windchill index using the following formula:
+35.74 + 0.6215T - 35.75 (Vº.16) + 0.4275T (Vº.16)
+Where T is the temperature in degrees Fahrenheit, and V is the wind speed in miles per hour.
+Write a program that prints a nicely formatted table of windchill val-ues. Rows should represent wind speed for 0 to 50 in 5-mph increments, and the columns represent temperatures from -20 to +60 in 10-degree increments. Note: The formula only applies for wind speeds in excess of three miles per hour.
+
+13) Write a program to plot a horizontal bar chart of student exam scores.
+First prompt the user to enter the number of scores. Then use a counted loop to get input from the user. Each line of input contains a student's last name followed by a score in the range 0-100. Your program should draw a horizontal rectangle for each student where the length of the bar represents the student's score. The bars should all line up on their left-hand edges. Hint: Use the number of students to determine the size of the window and its coordinates. Bonus: Label the bars at the left end with the students' names.
+Computewell
+Dibblebit
+Jones
+Smith
+
+14) Pig Latin is a silly made-up language. A word in English is translated into Pig Latin by moving its initial consonant cluster to the end of the word and adding "ay." If the English word starts with a vowel, then "way" is appended to the word. A sentence is translated into Pig Latin by translating each word. So, for example, the sentence, "Don't talk in front of the kids," becomes "On'tday alktay inway ontfray ofway ethay idskay." Write a program that gets phrases from the user and translates them into Pig
+Latin.
+To help structure the program, write and test the following set of helper functions.
+def firstVowel (word) :
+# returns the index of the first vowel in word
+def translateWordToPL(word) :
+# returns the Pig Latin translation of a single word
+def translatePhraseToPL (phrase) :
+# returns translation of a phrase
+For this program, treat "y" as a consonant if it is the first letter of a word and a vowel if it appears elsewhere.
+
+15) 15. LF is another made-up language (see previous problem). In LF, the letters "If" are added after the first vowel in a word, and then that vowel is repeated. The sentence "Don't talk in front of the kids" becomes "Dol-fon't talfalk ilfin frolfront olfof thelfe kilfids." Write a program to translate phrases into LF. You should use the same ideas as outlined in the previous exercise.
