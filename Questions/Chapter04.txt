@@ -1,1 +1,65 @@
+1) Alter the program from the last discussion question in the following ways:
+﻿﻿﻿﻿  a) Make it draw squares instead of circles.
+﻿﻿﻿﻿  b) Have each successive click draw an additional square on the screen (rather than moving the existing one).
+﻿﻿﻿﻿  c) Print a message on the window "Click again to quit" after the loop, and wait for a final click before closing the window.
 
+2) An archery target consists of a central circle of yellow surrounded by concentric rings of red, blue, black, and white. Each ring has the same width, which is the same as the radius of the vellow circle. Write a program objects drawn earlier.
+that draws such a target.
+
+3) Write a program that draws some sort of face.
+
+4) Write a program that draws a winter scene with a Christmas tree and a
+snowman.
+
+5) Write a program that draws five dice on the screen depicting a straight (L, 2, 3, 4, 5 or 2, 3, 4, 5, 6).
+
+6) Modify the graphical future value program so that the input (principal and
+APR) also are done in a graphical fashion using Entry objects.
+
+7) Circle Intersection.
+Write a program that computes the intersection of a circle with a hori-
+zontal line and displays the information textually and graphically.
+Input: Radius of the circle and the y-intercept of the line.
+Output: Draw a circle centered at (0, 0) with the given radius in a window
+with coordinates running from -10,-10 to 10,10.
+Draw a horizontal line across the window with the given y-intercept.
+Draw the two points of intersection in red.
+Print out the x values of the points of intersection.
+Formula: x = ‡vr2 - y2
+
+8) Line Segment Information.
+This program allows the user to draw a line segment and then displays
+some graphical and textual information about the line segment.
+Input: Two mouse clicks for the end points of the line segment.
+Output: Draw the midpoint of the segment in cyan.
+Draw the line.
+Print the length and the slope of the line.
+Formulas:
+dx = X2 - X1
+dy = y2 - У1
+slope = dy/dx
+length = vdx2 + dy
+
+9) Rectangle Information.
+This program displays information about a rectangle drawn by the user.
+Input: Two mouse clicks for the opposite corners of a rectangle.
+Output: Draw the rectangle.
+Print the perimeter and area of the rectangle.
+Formulas:
+area = (length) width)
+perimeter = 2(length + width)
+
+10) Triangle Information.
+a triangle.
+Same as the previous problem, but with three clicks for the vertices of
+Formulas: For perimeter, see length from the Line Segment problem.
+area = vss - a)(s - b)(s - c) where a, b, and c are the lengths of
+the sides and s = a++c.
+
+11) Five-click House.
+You are to write a program that allows the user to draw a simple house using five mouse clicks. The first two clicks will be the opposite corners of the rectangular frame of the house. The third click will indicate the center of the top edge of a rectangular door. The door should have a total width that is of the width of the house frame. The sides of the door should extend from the corners of the top down to the bottom of the frame. The fourth click will indicate the center of a square window. The window is half as wide as the door. The last click will indicate the peak of the roof.
+The edges of the roof will extend from the point at the peak to the corners of the top edge of the house frame.
+
+12) Five-click Scarecrow.
+Write a program that allows a user to draw a scarecrow face using five mouse clicks. The face to be drawn has a circular head, triangle nose, circular eyes, and an oval for a mouth. The position and sizing of each of these elements is controlled by the mouse clicks made by the user.
+The first click is the center of the head and also serves as the top of the nose. The second click is the edge of the head. The third click is the lower-left corner of the (isosceles triangle) nose. The fourth click is the center of the left eye. The eyes are placed symmetrically with a radius equal to one-tenth the radius of the head. The final click is the lower-left corner of the mouth's oval. The mouth is centered horizontally and the height of the oval is the same as the radius of the eyes. Here's an example result:
