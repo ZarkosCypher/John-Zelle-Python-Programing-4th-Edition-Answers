@@ -1,1 +1,30 @@
+1) ﻿﻿Implement the writeNumbersToFile function for our stats library as described in the chapter.
 
+2) Redo Exercise 7 from Chapter 7 so that it gets its input from a file.
+
+3) Redo Exercise 8 from Chapter 7 to get its data from a file.
+
+4) Redo Exercise 9 from Chapter 7 to get its data from a file.
+
+5) Redo Exercise 13 from Chapter 8 to get its input from a file.
+
+6) Write a program that translates an English text file into a Pig Latin text file (see Exercise 14 from Chapter 8).
+
+7) Error
+
+8) Extend either of the above programs so that it translates every text file in the translated files from the original.
+the current directory. Use an extension
+
+9) Write an automated censor program that reads in the text from a file and creates a new file where all of the four letter words have been replaced by
+"****". You can ignore punctuation, and you may assume that no words in the file are split across multiple lines.
+
+10) Extend the program from the previous exercise to accept a file of words to be censored as another input. The words in the original file that appear in the censored words file are replaced by a string of "*"s with length equal to the number of characters in the censored word.
+
+11) Extend the previous program to censor all of the . tt files in a directory and place the censored versions into a subdirectory called censored.
+
+12) Write a program to administer a multiple-choice quiz. The questions for the quiz are stored in a text file. Each question comprises five lines of text.
+The first line is the question, and the following four lines are the possible answers. The line with the correct answer starts with an asterisk ("*").
+One or more blank lines separate one question from the next.
+Your program should prompt the user for the path to the file containing the quiz and should then display the questions one at a time. The displayed answers should be labeled with a, b, c, d. Obviously, the asterisk that marks the correct answer should not be shown. The user types in the label to answer the question.
+The program should keep track of how many answers the user gets
+correct and show the score when the quiz has been completed.
